@@ -8,12 +8,11 @@ def divisors(num):
 
 
 def run():
-    try:
-        num = int(input("Ingrese un numero: "))
-        print(divisors(num))
-        print("Programa Terminado")
-    except ValueError:
-        print("Debes ingresar un numero")
+    num = input("Ingrese un numero: ")
+    assert num.isnumeric(), "Debes ingresar un numero"
+    print(divisors(int(num)))
+    print("Programa Terminado")
+        
 
     
 
